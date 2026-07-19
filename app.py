@@ -65,13 +65,13 @@ if st.button("🚀 一键生成爆款图文", use_container_width=True):
             st.subheader("📝 推荐电商标题")
             st.info(titles)
             
-           st.subheader("🖼️ 生成的电商效果图")
-col1, col2 = st.columns(2)
-with col1:
+            st.subheader("🖼️ 生成的电商效果图")
+            col1, col2 = st.columns(2)
+            with col1:
     st.image(uploaded_file, caption="原图（衣服将保持原样）", use_container_width=True)
 
-with col2:
-    with st.spinner("AI 正在努力为您更换模特与背景..."):
+            with col2:
+                with st.spinner("AI 正在努力为您更换模特与背景..."):
         try:
             import replicate
             # 调用海外免费图生图接口（保持衣服不变，换脸和背景）
