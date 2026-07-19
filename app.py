@@ -31,7 +31,7 @@ if st.button("🚀 一键生成爆款图文", use_container_width=True):
                 payload = {
                     "model": "glm-4",
                     "messages": [
-                        {"role": "user", "content": f"你是一个跨境服装电商爆款运营专家。请根据商品描述：'{product_desc}'，生成5个不同风格（吸睛爆款、高级小众、功能痛点等）的电商吸引力标题。字数在30字以内，多用流量词，直接给出列表。"}
+                        {"role": "user", "content": f"你是一个精通中国电商（拼多多平台）的爆款标题运营专家。请根据商品描述：'{product_desc}'，生成5个不同风格（吸睛爆款、高级小众、功能痛点等）的电商吸引力标题。字数在30字以内，多用流量词，直接给出列表。"}
                     ]
                 }
                 title_res = requests.post(title_url, headers=headers, json=payload).json()
