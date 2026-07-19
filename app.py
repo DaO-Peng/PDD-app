@@ -9,8 +9,8 @@ st.caption("纯免费方案 · 大陆直连 · 保持衣服不变，仅换脸和
 
 # 1. 密钥配置区域（在此处填写你申请的免费API Key）
 # 提示：你可以去智谱AI或零一万物官网免费注册获取大模型KEY
-ZHIPU_API_KEY = "在这里填入你的智谱AI_API_KEY" 
-REPLICATE_API_TOKEN = "在这里填入你的Replicate_TOKEN"
+ZHIPU_API_KEY = "024a6c35a3854699ab03b1096af6db2b.4LmIzegjZIhvkVAG" 
+REPLICATE_API_TOKEN = "r8_KpcjtPvKV3D56Jn8DjMH49Rp4s4ZewN4GsfrY"
 
 # 2. 界面输入
 product_desc = st.text_input("1. 输入商品描述（如：夏季纯棉纯白短袖T恤，宽松版型）", "")
