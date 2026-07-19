@@ -68,10 +68,10 @@ if st.button("🚀 一键生成爆款图文", use_container_width=True):
             st.subheader("🖼️ 生成的电商效果图")
             col1, col2 = st.columns(2)
             with col1:
-    st.image(uploaded_file, caption="原图（衣服将保持原样）", use_container_width=True)
+                st.image(uploaded_file, caption="原图（衣服将保持原样）", use_container_width=True)
 
             with col2:
-                with st.spinner("AI 正在努力为您更换模特与背景..."):
+    with st.spinner("AI 正在努力为您更换模特与背景..."):
         try:
             import replicate
             # 调用海外免费图生图接口（保持衣服不变，换脸和背景）
@@ -89,6 +89,6 @@ if st.button("🚀 一键生成爆款图文", use_container_width=True):
         except Exception as e:
             # 报错不逃避，直接把真凶打在屏幕上
             st.error(f"❌ 图像生成失败！真实报错原因: {str(e)}")
-            st.warning(f"请检查代码第13行的 REPLICATE_API_TOKEN 是否配置正确。")
+            st.warning("请检查代码第13行的 REPLICATE_API_TOKEN 是否配置正确。")
             st.image(uploaded_file, caption="由于报错，此为兜底原图", use_container_width=True)
-                st.caption("ℹ️ 提示：请在代码顶部配置 `REPLICATE_API_TOKEN` 以激活AI图像生成能力功能。")
+            st.caption("提示：请在代码顶部配置 `REPLICATE_API_TOKEN` 以激活AI图像生成能力功能。")
